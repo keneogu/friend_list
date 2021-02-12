@@ -30,6 +30,11 @@
     <%= form.label :phone %>
     <%= form.text_field :phone, class:"form-control",  placeholder:"phone number" %>
   </div>
+
+  <div class="field form-group">
+    <%= form.number_field :user_id, id: :friend_user_id, class:"form-control", value:"current_user.id", type: :hidden %>
+  </div>
+
   <br/>
   <div class="actions">
     <%= form.submit class:"btn btn-secondary" %>
