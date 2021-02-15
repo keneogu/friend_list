@@ -1,4 +1,4 @@
-
+<% if user_signed_in? %>
 <h1>Friend List</h1>
 
 <table class="table table-striped table-hover">
@@ -37,3 +37,7 @@
 <br>
 
 <%= link_to 'New Friend', new_friend_path, class:"btn btn-secondary" %>
+<% else %>
+<h1>Hello World!</h1>
+This is my second rails webpage...
+<% end %>
